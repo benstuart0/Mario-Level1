@@ -450,7 +450,7 @@ class Cloud(pygame.sprite.Sprite):
         elif self.size == 'h3':
             self.image = pygame.image.load('./Images/hill3.png')
         elif self.size == 'sn':
-            self.image = pygame.image.load('./Images/send_nudes.png')
+            self.image = pygame.image.load('./Images/hire_image.png')
         elif self.size == 'castle':
             self.image = pygame.image.load('./Images/castle.png')
 
@@ -797,7 +797,8 @@ class GameMain():
         self.screen = pygame.display.set_mode((self.width, self.height))
         self.clock = pygame.time.Clock()
 
-        self.player = Player(50,200)
+        #self.player = Player(50,200)
+        self.player = Player(6000,0)
 ##        self.player = Player(7750,100)
         self.sprites = pygame.sprite.Group()
         self.sprites.add(self.player)
@@ -968,10 +969,10 @@ class GameMain():
         self.current_level.wall_list.draw(self.screen)
         self.current_level.shroom_list.draw(self.screen)
         self.current_level.pipe_hitbox_list.draw(self.screen)
-        self.d_label = self.font.render('HELLO',1,Color('white'))
-        self.a_label = self.font.render('MY',1,Color('white'))
-        self.t_label = self.font.render('NAME',1,Color('white'))
-        self.b_label = self.font.render('IS',1,Color('white'))
+        self.d_label = self.font.render('OH',1,Color('white'))
+        self.a_label = self.font.render('SHIT',1,Color('white'))
+        self.t_label = self.font.render('WADDUP',1,Color('white'))
+        self.b_label = self.font.render('ITS',1,Color('white'))
         self.o_label = self.font.render('DAT',1,Color('white'))
         self.i_label = self.font.render('BOI!',1,Color('white'))
         
@@ -1034,6 +1035,7 @@ class GameMain():
         # Time
         self.time_label = self.font.render(' {}'.format(self.time),1,Color('white'))
         self.screen.blit(self.time_label, (650,60))
+
 
         pygame.display.flip()
 
