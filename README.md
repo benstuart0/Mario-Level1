@@ -10,5 +10,5 @@ _This is a customized version of the first level of Super Mario Bros that I made
 
 #### Secret Functionality:
 1. The game is currently set to spawn you near the end of the map. Take note of bullet 3 in this area.
-* Spell out *dat boi*'s name with your keyboard to view his catch phrase.
-* Hold ***C*** while traveling across the long brick wall at the end of the stage for a surprise.
+2. Spell out *dat boi*'s name with your keyboard to view his catch phrase.
+3. Hold ***C*** while traveling across the long brick wall at the end of the stage for a surprise.
